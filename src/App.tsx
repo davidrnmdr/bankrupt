@@ -1,5 +1,13 @@
-export function App() {
-  return <div className="App">Hello Word!</div>;
-}
+import { Dashboard } from "./components/Dashboard";
+import { Header } from "./components/Header";
+import { GlobalStyle } from "./styles/global";
 
-export default App;
+export function App() {
+  return (
+    <>
+      <Header />
+      <Dashboard />
+      <GlobalStyle />
+    </>
+  );
+}
