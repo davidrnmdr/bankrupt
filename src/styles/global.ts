@@ -65,4 +65,26 @@ button {
 .logo{
     width: 16%;
 }
+
+.modal-overlay {
+background: rgba(255, 255, 255, 0.5);
+position: fixed;
+top: 0;
+bottom: 0;
+left: 0;
+right:0;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 576px;
+    background: var(--shape);
+    padding: 3rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
 `;
