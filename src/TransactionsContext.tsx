@@ -17,14 +17,15 @@ export function TransactionProvider(props: TransactionsProviderProps) {
       .then((response) => setTransactions(response.data.transactions));
   }, []);
 
-  async function createTransaction(transaction: Partial<Transaction>) {
+  async function createTransaction(transactionInput: Partial<Transaction>) {
     const response = await api.post("/transactions", {
-      ...transaction,
+      ...transactionInput,
       date: new Date(),
     });
-    const { addedTransaction } = response.data;
 
-    setTransactions([...transactions, addedTransaction]);
+    const { transaction } = response.data;
+
+    setTransactions([...transactions, transaction]);
   }
 
   return (
