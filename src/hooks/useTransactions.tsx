@@ -1,10 +1,10 @@
-import { createContext, useEffect, useState } from "react";
-import { Transaction } from "./types/Transaction";
-import { api } from "./services/api";
-import { TransactionsProviderProps } from "./types/TransactionsProviderProps";
-import { TransactionContextData } from "./types/TransactionsContextData";
+import { createContext, useContext, useEffect, useState } from "react";
+import { Transaction } from "../types/Transaction";
+import { api } from "../services/api";
+import { TransactionsProviderProps } from "../types/TransactionsProviderProps";
+import { TransactionContextData } from "../types/TransactionsContextData";
 
-export const TransactionContext = createContext<TransactionContextData>(
+const TransactionContext = createContext<TransactionContextData>(
   {} as TransactionContextData
 );
 
@@ -33,4 +33,10 @@ export function TransactionProvider(props: TransactionsProviderProps) {
       {props.children}
     </TransactionContext.Provider>
   );
+}
+
+export function useTransactions() {
+  const context = useContext(TransactionContext);
+
+  return context;
 }
