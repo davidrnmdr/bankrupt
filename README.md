@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Bankrupt - Finance Control
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an app that you can use to avoid going bankrupt.
 
 ## Available Scripts
 
