@@ -2,13 +2,13 @@
 
 This is an app that you can use to avoid going bankrupt.
 
-![Main Screen](https://i.imgur.com/27AuJce.png)
+![Main Screen](assets/prints/main-screen.jpg)
 
 ## The app
 
 Bankrupt is a simple finance control app: you can add transactions specifying the type, amount, title and category. When clicking "New transaction" button on the right upper corner the following modal window will appear:
 
-![Modal](https://i.imgur.com/rcrTBNT.png)
+![Modal](assets/prints/modal.jpg)
 
 After hitting the "Register" button the transaction will appear in the Transactions Table and the upper summary will be uptaded.
 
