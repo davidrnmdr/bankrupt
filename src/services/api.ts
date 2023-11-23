@@ -1,5 +1,6 @@
 import axios from "axios";
 
 export const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: "https://bankrupt-finance-control.web.app/api",
+  // Change to "https://localhost:3000/api" if you want to run it locally
 });
